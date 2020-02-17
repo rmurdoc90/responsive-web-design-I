@@ -73,7 +73,6 @@ body{
 header{
 	display:flex;
 	width: 100%;
-	height: 12vh;
 	background-color: white;
 	margin-top: 2%;
 	align-items: center;
@@ -205,13 +204,13 @@ address{
 
 /* <-------------MEDIA QUERY START--------------> */
 
+/* TABLET MEDIA QUERY */
 @media(Max-width:800px){
     body{
         margin:2%;
     }
     header{
         flex-direction: column-reverse;
-        height: 10vh;
     }
     .navbar{
         width:100%;
@@ -228,9 +227,50 @@ address{
         justify-content: space-between;
     }
 }
+/* TABLET MEDIA QUERY */
+
+
+/* MOBILE MEDIA QUERY */
+
+
+@media(max-width:500px){
+    
+    .navbar nav{
+    flex-direction: column;
+    border-bottom: rgb(70, 70, 70) 1px solid;
+    border-top: rgb(70,70,70) 1px solid;
+}
+    a{
+        border:gainsboro 1px solid;
+        height:6vh;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        
+    }
+    h1{
+        font-size: 85px;
+    }
+    .CTASection{
+        height:45vh;
+    }
+    .content, .content-two{
+        flex-direction: column;
+    }
+    .contentCard1, .contentCard2, .contentCard3, .contentCard4, .contentCard5{
+        width:97%;
+    }
+}
+
+
+
+
+
+/* MOBILE MEDIA QUERY */
 
 /* DEV TOOLS */
-div{
+/* div{
 	border: lime 1px solid;
 
 }
@@ -240,6 +280,6 @@ section{
 }
 nav{
 	border: pink 1px solid;
-}
+} */
 /* DEV TOOLS ENDING */
 
